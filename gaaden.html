@@ -1,0 +1,69 @@
+<html lang="da">
+<!--Ændre hvis eksempelvis engelsk-->
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <!--Her skrives en sammenhængende tekst om hvad siden handler om-->
+
+    <meta name="keywords" content="Café Smagløs, café, mad, drikke, events, musik, klostertorvet, jazz, smagløs, øl, historie, speciel, stemning, Århus">
+    <!--Keywords omkring siden, med komma imellem hvert ord-->
+
+
+
+    <title></title>
+    <!--Sidens titel, også den der står i fanen på google-->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Også her evt. google fonts indsættes-->
+
+</head>
+
+
+<body id="baggrund1">
+<div class="container">
+<a href="index.html"><img class="pilvenstre" src="images/pil-venstre.png"  alt=""></a>
+<a href="rum-1.html"><img class="pilhojre" src="images/pil-hojre.png"   alt=""></a>
+
+</div>
+
+
+
+<!--onclick "change" bruges til at sige når der klikkes skal det der sker nede i function change ske-->
+
+<img src="fjernsyn.png" alt="" id="fjernsynet" onclick="change();" width="50%;">
+    
+    
+    
+
+ <!--fundet her: https://www.youtube.com/watch?v=SGKXZUGe2sw-->
+
+<script type="text/javascript">
+    var image_tracker = 'f'
+   
+    function change() {
+        
+        var image = document.getElementById('fjernsynet');
+        
+        if(image_tracker=='f') {
+            image.src='television.png';
+            image_tracker = 't';
+        }else{
+            image.src = 'fjernsyn.png';
+            image_tracker ='f';
+        }
+    }
+    
+    
+    
+    </script>
+
+
+
+</body>
+
+</html>
